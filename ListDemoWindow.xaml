@@ -35,7 +35,7 @@
             <TabItem Header="滑块" >
                 <DockPanel LastChildFill="False">
                     <Slider x:Name="slider" Maximum="10" DockPanel.Dock="Left" Width="350"/>
-                    <TextBlock Text="{Binding ElementName=slider,Path=Value,Mode=TwoWay}" DockPanel.Dock="Right" Width="40" />
+                    <TextBox Text="{Binding ElementName=slider,Path=Value,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" Width="40" />
                 </DockPanel>
             </TabItem>
         </TabControl>
